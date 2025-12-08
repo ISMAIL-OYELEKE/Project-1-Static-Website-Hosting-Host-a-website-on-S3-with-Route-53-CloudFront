@@ -1,0 +1,2 @@
+# Project-1-Static-Website-Hosting-Host-a-website-on-S3-with-Route-53-CloudFront
+This project demonstrates how to host a secure, high-performance static website on AWS using a serverless architecture. By leveraging **Amazon S3** for storage, **Amazon CloudFront** for content delivery (caching), and **Amazon Route 53** for DNS management, this solution ensures low latency and high availability globally.
