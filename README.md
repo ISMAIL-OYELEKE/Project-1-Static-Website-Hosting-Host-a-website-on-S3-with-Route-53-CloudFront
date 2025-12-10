@@ -6,7 +6,7 @@ This project demonstrates how to host a secure, high-performance static website 
 ## 🏗️ Architecture
 The architecture follows a standard static hosting pattern:
 
-![AWS Architecture Diagram](architecture.png)
+<img width="761" height="411" alt="Hosting static website using s3 drawio" src="https://github.com/user-attachments/assets/b275bae1-ed09-41a8-9e6d-527220a1671f" />
 
 ## 🛠️ Services Used
 * **Amazon S3:** Object storage for hosting HTML, CSS, and JS files.
