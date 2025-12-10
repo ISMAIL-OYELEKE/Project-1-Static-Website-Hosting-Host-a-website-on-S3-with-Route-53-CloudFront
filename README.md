@@ -54,7 +54,8 @@ To make the website public, add the following policy in the **Permissions** tab:
 			"Resource": "arn:aws:s3:::ismailoyeleke.com/*"
 		}
 	]
-}
+	}
+
 
 ### Step 5: Configure CloudFront (CDN)
 1. Navigate to **CloudFront** and click **Create distribution**.
