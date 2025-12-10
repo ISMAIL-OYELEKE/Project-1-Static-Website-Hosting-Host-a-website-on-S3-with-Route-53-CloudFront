@@ -16,7 +16,7 @@ The architecture follows a standard static hosting pattern:
 
 ## 📋 Prerequisites
 * An active AWS Account.
-* A registered domain name (via Route 53 or external registrar).
+* A registered domain name (via Route 53 or external registrar)- `ismailoyeleke.com`
 * Basic HTML/CSS files (`index.html`).
 
 ## ⚙️ Implementation Steps
@@ -24,8 +24,8 @@ The architecture follows a standard static hosting pattern:
 ### Step 1: Create an S3 Bucket
 1. Navigate to the **S3 Console**.
 2. Click **Create bucket**.
-3. **Bucket Name:** Must match your domain name (e.g., `www.oyeleke-projects.com`).
-4. **Region:** Choose the region closest to you (e.g., `us-east-1`).
+3. **Bucket Name:** Must match your domain name (e.g., `www.ismailoyeleke.com`).
+4. **Region:** `us-east-1`.
 5. **Public Access:** Uncheck "Block all public access" (Acknowledging the warning).
 6. Click **Create bucket**.
 
@@ -44,19 +44,17 @@ The architecture follows a standard static hosting pattern:
 To make the website public, add the following policy in the **Permissions** tab:
 
     {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "PublicReadGetObject",
-                "Effect": "Allow",
-                "Principal": "*",
-                "Action": "s3:GetObject",
-                "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
-            }
-        ]
-    }
-
-*Replace `YOUR-BUCKET-NAME` with your actual bucket name.*
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "PublicReadGetObject",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::ismailoyeleke.com/*"
+		}
+	]
+}
 
 ### Step 5: Configure CloudFront (CDN)
 1. Navigate to **CloudFront** and click **Create distribution**.
