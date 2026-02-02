@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyeleke Ismail | Cloud Engineer & .NET Developer</title>
+    <meta name="description" content="Portfolio of Oyeleke Ismail - AWS Solutions Architect and .NET Developer.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ismailoyeleke.cloud/"> <meta property="og:title" content="Oyeleke Ismail | Cloud Engineer & .NET Developer">
+    <meta property="og:description" content="I build secure .NET applications and architect the scalable AWS environments they run on.">
+    <meta property="og:image" content="https://ismailoyeleke.cloud/images/ismailpicture.jpg"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home"> <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">ISMAIL OYELEKE<span class="dot">.</span>CLOUD</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certs">Certifications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-image-container">
+                <img src="images/ismailpicture.jpg" alt="Ismail Oyeleke" class="hero-image">
+            </div>
+
+            <p class="hero-intro">
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+            </p>
+            <h1>Bridging Software Development <br> and Cloud Infrastructure.</h1>
+            <p class="hero-sub">I build secure .NET applications and architect the scalable AWS environments they run on.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="resources/Oyeleke-Ismail-Olanrewaju-CV.pdf" target="_blank" class="btn btn-outline">Download Resume</a> 
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Solutions</h2>
+                <div class="line"></div>
+            </div>
+
+            <h3 class="category-title"><i class="fa-brands fa-aws"></i> AWS Cloud Architecture</h3>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag tag-cloud">Enterprise Arch</span>
+                        <h3>Enterprise Multi-Tier Web App</h3>
+                        <p class="project-desc">
+                            <strong>Highly Available 3-Tier Architecture.</strong> Deployed across multiple AZs using a custom VPC. Enhanced resilience with ALB routing and Auto Scaling Groups. Secured data via private subnets and integrated AWS Secrets Manager for RDS credential rotation.
+                        </p>
+                        <div class="tech-stack">
+                            <span>VPC</span><span>EC2</span><span>RDS</span><span>ALB</span><span>ASG</span><span>Secrets Manager</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/ISMAIL-OYELEKE/Project-3-Enterprise-Multi-Tier-Web-App-Deployment" target="_blank"><i class="fa-brands fa-github"></i> View Architecture</a>
+                            <a href="https://youtu.be/Q7ZUihGmsmU?si=imszS8LbHChIUPLR" target="_blank" style="margin-left: 10px;"><i class="fa-brands fa-youtube"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag tag-cloud">Infrastructure</span>
+                        <h3>Serverless Static Web Hosting</h3>
+                        <p class="project-desc">
+                            <strong>This Portfolio Website.</strong> Designed a production-ready static site architecture. Hosted on S3 with fine-grained policies, delivered via CloudFront CDN, and secured with ACM certificates.
+                        </p>
+                        <div class="tech-stack">
+                            <span>S3</span><span>CloudFront</span><span>Route 53</span><span>ACM</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/ISMAIL-OYELEKE/Project-1-Static-Website-Hosting-Host-a-website-on-S3-with-Route-53-CloudFront" target="_blank"><i class="fa-brands fa-github"></i> View Architecture</a>
+                            <a href="https://youtu.be/XOSVDGpVcy8?si=xiaByBuSqJqehTBz" target="_blank" style="margin-left: 10px;"><i class="fa-brands fa-youtube"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag tag-cloud">Infrastructure</span>
+                        <h3>Scalable CMS Deployment</h3>
+                        <p class="project-desc">
+                            Deployed a production-ready WordPress blog on AWS Lightsail. Configured Linux VPS, Static IPs, and automated snapshots. Implemented SSL via Let’s Encrypt for secure traffic.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Lightsail</span><span>Linux</span><span>Bitnami</span><span>SSL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/ISMAIL-OYELEKE/Project-2-WordPress-on-AWS-Lightsail-Deploying-a-WordPress-blog-on-AWS-Lightsail" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+                            <a href="https://youtu.be/bGjOyoxUrqg?si=nzOO2gmIzhyp5jj0" target="_blank" style="margin-left: 10px;"><i class="fa-brands fa-youtube"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title code-title"><i class="fa-solid fa-code"></i> .NET Software Engineering</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag tag-dev">Backend API</span>
+                        <h3>NZWalks Tourism API</h3>
+                        <p class="project-desc">
+                            A robust RESTful API for tourism data. Engineered full CRUD operations with Entity Framework Core, JWT-based auth, role-based access control, filtering, and pagination.
+                        </p>
+                        <div class="tech-stack">
+                            <span>C#</span><span>.NET Core 8</span><span>SQL Server</span><span>JWT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/ISMAIL-OYELEKE/NzWalks" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag tag-dev">FinTech</span>
+                        <h3>FinShark Financial API</h3>
+                        <p class="project-desc">
+                            Secure backend for expense tracking. Designed complex data models using Code-First migrations, strict input validation, and tiered authorization protocols.
+                        </p>
+                        <div class="tech-stack">
+                            <span>ASP.NET Core</span><span>EF Core</span><span>SQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/ISMAIL-OYELEKE/FINSHARK" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Arsenal</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>AWS (EC2, S3, VPC, Lambda)</li>
+                        <li>RDS & DynamoDB</li>
+                        <li>Terraform (IaC)</li>
+                        <li>Docker</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Development</h3>
+                    <ul class="skill-list">
+                        <li>C# & .NET Core</li>
+                        <li>ASP.NET Web API</li>
+                        <li>Entity Framework</li>
+                        <li>SQL Server / MySQL</li>
+                        <li>Python</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Certifications Catalogue</h2>
+                <div class="line"></div>
+                <p class="section-sub">Click on any badge to view official verification.</p>
+            </div>
+            
+            <div class="cert-grid">
+                
+                <a href="https://www.credly.com/badges/e096149f-4db9-42ea-b5b8-d05a45a7a63a/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS SAA">
+                    <span>AWS Solutions Architect Associate</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/cedcaae3-7094-49f8-8736-f49bd2dbbeaf/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner">
+                    <span>AWS Cloud Practitioner</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/ba098e8b-a21e-41f4-aba3-a549ef50a541/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="https://images.credly.com/size/160x160/images/e3c001fd-161d-433a-a7a4-049556d6112d/blob" alt="Aviatrix Multi-Cloud Network">
+                    <span>Aviatrix Multi-Cloud Network</span>
+                </a>
+
+                <a href="https://savanna.alxafrica.com/certificates/RBXzYHGEx9" target="_blank" class="cert-item highlight-cert">
+                    <div class="cert-placeholder"><i class="fa-solid fa-certificate"></i></div>
+                    <span>ALX Cloud Practitioner</span>
+                </a>
+
+                 <a href="https://savanna.alxafrica.com/certificates/zNRcC7pX3S" target="_blank" class="cert-item highlight-cert">
+                    <div class="cert-placeholder"><i class="fa-solid fa-user-graduate"></i></div>
+                    <span>ALX Professional Foundations</span>
+                </a>
+                
+                <a href="https://www.coursera.org/account/accomplishments/verify/9ULFTVBYDUPZ" target="_blank" class="cert-item highlight-cert">
+                     <img src="images/deeplearning.png" alt="Supervised Machine Learning">
+                    <span>Supervised Machine Learning</span>
+                </a>
+
+                <a href="https://www.coursera.org/account/accomplishments/verify/URBKT4HOXOWY" target="_blank" class="cert-item highlight-cert">
+                    <div class="cert-placeholder"><i class="fa-solid fa-layer-group"></i></div>
+                   <span>Advanced Learning Algorithms</span>
+               </a>
+
+                <a href="https://www.credly.com/badges/99428f31-fc3e-4b25-a042-6d3ba03a6b3a/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/cloudops.png" alt="Cloud Ops Badge">
+                    <span>Cloud Ops Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/6df781d8-5750-4117-b968-353ab0fd3793/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/compute.png" alt="Compute Badge">
+                    <span>Compute Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/0fed28b4-e15d-4a92-a608-54b955f7ffe7/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/databases.png" alt="Databases Badge">
+                    <span>Databases Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/030b628e-4fd3-4457-a8a8-60b307a7c1f1/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/networking.png" alt="Networking Badge">
+                    <span>Networking Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/f2aeb51d-0e77-4504-a0e3-0bb71adde0f8/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/security.png" alt="Security Badge">
+                    <span>Security Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/58b2239e-95bf-4344-96fb-45e2e40b29e2/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/serverless.png" alt="Serverless Badge">
+                    <span>Serverless Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/09c40adc-7b88-43e3-82df-252dc97e7ee8/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/storage.png" alt="Storage Badge">
+                    <span>Storage Badge</span>
+                </a>
+
+                <a href="https://www.credly.com/badges/b33f8399-0757-44e2-9367-7e28bd37aec8/public_url" target="_blank" class="cert-item highlight-cert">
+                    <img src="images/cloud101.png" alt="Intro to Cloud Badge">
+                    <span>Intro to Cloud Badge</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a <strong>Computer Science graduate</strong> (3.85/4.0 CGPA) and a certified Solutions Architect with a passion for building systems that are efficient, secure, and scalable.</p>
+                <p>Unlike many in the field, I didn't just stumble into cloud computing; I built a strong foundation in software engineering (.NET) first. This allows me to not only provision infrastructure but to deeply understand the application logic that runs on it.</p>
+                <p>I am driven by a "builder's mindset" whether it's architecting a fault-tolerant VPC, coding a complex API, or exploring Machine Learning. I believe in clean code, automated infrastructure, and continuous learning.</p>
+            </div>
+            <div class="about-stats">
+                 <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Live Projects</p>
+                 </div>
+                 <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>Badges & Certs</p>
+                 </div>
+                 <div class="stat-box">
+                    <h3>CS</h3>
+                    <p>Degree</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>Let's Connect</h2>
+            <p>Ready to build something scalable? Reach out.</p>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ismail-oyeleke-6930b6317/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                
+                <a href="https://github.com/ISMAIL-OYELEKE" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                
+                <a href="https://www.credly.com/users/ismail-oyeleke" target="_blank" title="Credly Profile"><i class="fa-solid fa-certificate"></i></a>
+                
+                <a href="mailto:Ismailoyeleke2003@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                
+                <a href="https://wa.link/cu14r5" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                
+                <a href="https://youtube.com/@learn_with_ismail_oyeleke?si=cZI9cQNEcxhCU1d7" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                
+                <a href="https://medium.com/@ismailoyeleke2003" target="_blank" title="Medium"><i class="fa-brands fa-medium"></i></a>
+            </div>
+
+            <p class="copyright">
+                &copy; <span id="year"></span> Oyeleke Ismail. Hosted on <i class="fa-brands fa-aws"></i> AWS S3 & CloudFront.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"18f1774e987607f2c15c9c6230f38518d","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/kommunicate-widget-3.0.min.js";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>
