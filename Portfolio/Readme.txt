@@ -2,7 +2,7 @@
 OYELEKE ISMAIL - PORTFOLIO WEBSITE DOCUMENTATION
 ========================================================================
 
-Hi Oyeleke! This file is your guide to maintaining and updating your 
+Hi This file is your guide to maintaining and updating your 
 portfolio website. 
 
 --- FOLDER STRUCTURE ---
@@ -90,5 +90,6 @@ DEPLOYMENT CHECKLIST (AWS S3)
 3. Set Permissions (Uncheck "Block all public access").
 4. Add Bucket Policy (Allow "s3:GetObject" for public).
 5. (Optional) Set up CloudFront & Route 53 for HTTPS.
+
 
 Good luck, Cloud Engineer! 🚀
